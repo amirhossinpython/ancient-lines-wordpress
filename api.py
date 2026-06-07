@@ -1,5 +1,3 @@
-# api.py
-
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from ancient import AncientScripts
@@ -24,7 +22,6 @@ def convert_text():
         if not text:
             return jsonify({'error': 'متن وارد نشده است', 'success': False}), 400
         
-        # تبدیل بر اساس خط
         func = getattr(converter, script.lower(), None)
         
         if not func:
@@ -44,7 +41,6 @@ def health():
 
 
 if __name__ == '__main__':
-    print("🏛️ AncientLines Web Service")
-    print("📍 http://localhost:5001")
-    print("📡 POST /convert")
+   
+   
     app.run(debug=False, host='0.0.0.0', port=5001)

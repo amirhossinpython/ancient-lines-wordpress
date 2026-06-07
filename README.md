@@ -23,11 +23,16 @@
 
 ```bash
 pip install flask flask-cors ancientlinesoftheworld
+```
 
 فایل api.py را دانلود کرده و اجرا کنید:
 ```
 python api.py
 ```
+
+
+
+
 
 ## وب سرویس روی آدرس http://localhost:5001 اجرا می‌شود
 توجه مهم: وب سرویس باید همیشه در حال اجرا باشد تا افزونه وردپرس بتواند با آن ارتباط برقرار کند
